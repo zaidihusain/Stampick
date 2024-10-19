@@ -1,0 +1,230 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 9%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --radius: 0.5rem;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+  }
+
+  .dark {
+    --background: 0 0% 9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.slider-container {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.slide img {
+  border-radius: 8px;
+}
+
+.slide-content h3 {
+  color: #4a4a4a;
+  font-size: 1.5rem;
+}
+
+/* button {
+  background-color: #ff7b00;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #ff5700;
+} */
+ 
+.add{
+  width: 70%;
+  margin-left: max(5vw ,25px);
+  margin-top: 50px;
+  color: #6d6d6d;
+  font-size: 16px;
+  align-items: center;
+  
+}
+
+.add form{
+ 
+ gap: 20px;
+}
+.add-image-upload img{
+  width: 120px
+;
+}
+.add-product-name, .add-product-description{
+  width: max(40%,280px);
+  
+}
+.add-product-name input, .add-product-description textarea{
+  padding: 10px;
+
+  
+}
+.add-image-upload p{
+  font-size: 20px;
+  font-weight: 500;
+  color: tomato;
+}
+.add-cetogry-price{
+  display: flex;
+  gap: 30px;
+}
+
+.add-cetogry-price select, .add-cetogry-price input{
+  max-width: 120px;
+  padding: 10px;
+}
+.add-btn{
+  max-width: 120px;
+  border: none;
+  padding: 10px;
+  background-color: tomato;
+  color: white;
+  cursor: pointer;
+
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.autoplay-progress {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+ z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+}
+
+.autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: white;
+  fill: none;
+  stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
+}
+
+
+.swiper-button-next::after, .swiper-button-prev::after {
+  font-size: 80px; /* Change arrow size */
+  color: white; /* Customize arrow color */
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+ 
+}
+
+/* Customize pagination dots (bullets) */
+.swiper-pagination-bullet {
+  background-color: gray !important; /* Change dot color */
+  opacity: 1 !important;
+}
+
+/* Active dot customization */
+.swiper-pagination-bullet-active {
+  background-color: white !important; /* Active dot color */
+}
+

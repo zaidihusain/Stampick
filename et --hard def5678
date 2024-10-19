@@ -1,0 +1,10 @@
+[33m6e8a985[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{0}: reset: moving to 6e8a985adc03e24151347cb4cbffaddfc0d27ab1
+[33mad9592c[m[33m ([m[1;31morigin/main[m[33m)[m HEAD@{1}: pull: Merge made by the 'ort' strategy.
+[33m6e8a985[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{2}: commit: slider added
+[33m226599d[m HEAD@{3}: commit: dashboard fixed
+[33m16a98e1[m HEAD@{4}: pull: Merge made by the 'ort' strategy.
+[33m28e8283[m HEAD@{5}: commit: idk what changes i did
+[33m4ab0faa[m HEAD@{6}: commit: intialised
+[33mca78e07[m HEAD@{7}: Branch: renamed refs/heads/master to refs/heads/main
+[33mca78e07[m HEAD@{9}: commit: project intialised
+[33m17b84f0[m HEAD@{10}: commit (initial): Initial commit from Create Next App
